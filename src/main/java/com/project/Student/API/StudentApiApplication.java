@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackageClasses= {StudentController.class, StudentServiceImpl.class, StudentRepository.class, StudentService.class})
 public class StudentApiApplication {
 
 	public static void main(String[] args) {

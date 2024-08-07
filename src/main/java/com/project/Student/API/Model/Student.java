@@ -2,6 +2,10 @@ package com.project.Student.API.Model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import java.time.LocalDate;
 
 @Data
 @Entity
@@ -16,6 +20,8 @@ public class Student {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
+    @Column(name= "date_of_birth")
+    private LocalDate dateOfBirth;
     private String classs;
     private String section;
 
